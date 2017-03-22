@@ -1,0 +1,27 @@
+<div class="sb-row-inner sb-pad">
+  <div class="sb-column sb-column-2">
+    <div onclick="openNav()" class="slideRight item fa fa-bars trigger menuTrigger"></div>
+  </div>
+  <div class="sb-column sb-column-8">
+    <div class="slideDown item center logo">
+      SB
+    </div>
+  </div>
+  <div class="sb-column sb-column-2">
+    <div onclick="openNavRight()" class="slideLeft item right fa fa-user trigger loginTrigger"></div>
+  </div>
+</div>
+
+<script>
+$(document).ready(function() {
+  $(".header").on('click','.trigger',function(){
+    var triggerName = $(this).attr('class').split(' ').pop();
+    var id = triggerName.substr(0, triggerName.length - 7);
+
+    $('body, html').css('overflowY', 'hidden').css('height', '100%');
+    $('.darken').fadeIn();
+    $('.sideNavInner').hide();
+    $('.' + id).fadeIn();
+  });
+});
+</script>
