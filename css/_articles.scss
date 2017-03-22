@@ -8,8 +8,11 @@ article{
     background: $light-grey;
     width: 100%;
     float: left;
-    // Remove height once images are in
-    min-height: 250px;
+
+    img{
+      float: left;
+      width: 100%;
+    }
   }
   .details{
     width: 100%;
@@ -28,8 +31,6 @@ article{
 @media only screen and (max-width: $tablet){
   article{
     .image{
-      // Remove height once images are in
-      min-height: 150px;
     }
   }
 }
@@ -43,8 +44,6 @@ article{
         width: 100% !important;
         article{
           .image{
-            // Remove height once images are in
-            min-height: 200px;
           }
         }
       }

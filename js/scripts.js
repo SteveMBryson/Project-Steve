@@ -28,6 +28,10 @@ $(document).ready(function() {
   if ((width <= 768)) {
   }
 
+  $("article p").text(function(index, currentText) {
+    return currentText.substr(0, 190) + '...';
+  });
+
   // Sliders
   $('.slider').slick({
 		dots: true,

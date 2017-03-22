@@ -5,9 +5,6 @@
 
   .slide{
     float: left;
-    background: $off-white;
-    //Delete this
-    height: 250px;
 
     img{
       float: left;
@@ -46,6 +43,15 @@
     }
     li.slick-active{
       opacity: 1;
+    }
+  }
+}
+
+@media only screen and (max-width: $width-base){
+  .sb-column-12.sliderContainer{
+    padding: 0;
+    .slider{
+      padding: 0;
     }
   }
 }

@@ -27,7 +27,9 @@
   }
   .inner.ghost{
     background: transparent;
-    border: $border-light;
+    color: $black;
+    padding: 0;
+    border: 0;
   }
   .inner.ghostAlt{
     background: transparent;

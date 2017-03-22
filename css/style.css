@@ -336,9 +336,7 @@ section.dark {
   float: left;
   position: relative; }
   .slider .slide {
-    float: left;
-    background: #f7f7f7;
-    height: 250px; }
+    float: left; }
     .slider .slide img {
       float: left;
       width: 100%; }
@@ -370,6 +368,11 @@ section.dark {
     .slider .slick-dots li.slick-active {
       opacity: 1; }
 
+@media only screen and (max-width: 1200px) {
+  .sb-column-12.sliderContainer {
+    padding: 0; }
+    .sb-column-12.sliderContainer .slider {
+      padding: 0; } }
 .buttonsContainer {
   float: left; }
 
@@ -396,7 +399,9 @@ section.dark {
     border: 1px solid #000; }
   .button .inner.ghost {
     background: transparent;
-    border: 1px solid #fff; }
+    color: #000;
+    padding: 0;
+    border: 0; }
   .button .inner.ghostAlt {
     background: transparent;
     border: 1px solid #000;
@@ -613,8 +618,10 @@ article {
   article .image {
     background: #ddd;
     width: 100%;
-    float: left;
-    min-height: 250px; }
+    float: left; }
+    article .image img {
+      float: left;
+      width: 100%; }
   article .details {
     width: 100%;
     float: left;
@@ -624,17 +631,12 @@ article {
     article .details p {
       text-align: justify; }
 
-@media only screen and (max-width: 768px) {
-  article .image {
-    min-height: 150px; } }
 @media only screen and (max-width: 414px) {
   .articles .sb-row-inner {
     padding: 10px 0; }
     .articles .sb-row-inner .sb-column-4 {
       padding: 10px 0;
-      width: 100% !important; }
-      .articles .sb-row-inner .sb-column-4 article .image {
-        min-height: 200px; } }
+      width: 100% !important; } }
 .footer {
   background: #000; }
   .footer .sb-row .sb-row-inner .sb-column ul.footerGroup {
@@ -693,7 +695,9 @@ article {
         padding-top: 10px;
         float: left; } }
 .fa-before:before {
-  padding: 0 5px 0 0; }
+  padding: 0 5px 0 0;
+  font-weight: inherit !important;
+  color: inherit; }
 
 h1, h2, h3, h4 {
   font-weight: 600;
@@ -701,7 +705,8 @@ h1, h2, h3, h4 {
   margin: 0;
   padding: 10px 0;
   letter-spacing: 1.5px;
-  line-height: 20px; }
+  line-height: 20px;
+  font-family: "Playfair Display", serif; }
 
 p {
   margin: 0;

@@ -111,6 +111,8 @@ html, body{
 
 .fa-before:before{
   padding: 0 $pad-small 0 0;
+  font-weight: inherit !important;
+  color: inherit;
 }
 
 h1, h2, h3, h4{
@@ -120,6 +122,7 @@ h1, h2, h3, h4{
   padding: $pad-base 0;
   letter-spacing: $letter-base;
   line-height: $line-base;
+  font-family: $font-alt;
 }
 
 p{
